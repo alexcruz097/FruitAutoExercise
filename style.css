@@ -3,44 +3,86 @@
 }
 
 :focus {
- /* TODO */
+  /* TODO */
 }
 
 body {
   /* TODO */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* gradient */
+  background: rgb(243, 204, 39);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(243, 204, 39, 1) 0%,
+    rgba(223, 79, 0, 1) 80%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(243, 204, 39, 1) 0%,
+    rgba(223, 79, 0, 1) 80%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(243, 204, 39, 1) 0%,
+    rgba(223, 79, 0, 1) 80%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f3cc27",endColorstr="#df4f00",GradientType=1);
 }
 
 input {
- /* TODO */
+  /* TODO */
 }
 
 .search-container {
- /* TODO */
+  /* TODO */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 }
+
 .search-container input,
 .search-container .suggestions {
   /* TODO */
 }
 .search-container input {
- /* TODO */
-}
-.search-container .suggestions {
-   /* TODO */
-}
-
-ul {
   /* TODO */
 }
+
+.search-container .suggestions {
+  /* TODO */
+  position: relative;
+}
+ul {
+  /* TODO */
+  list-style: none;
+  position: absolute;
+  width: 14.6rem;
+  background-color: #ed9e3c;
+  padding-left: 0;
+  margin-top: 0;
+}
+
 ul.has-suggestions {
   /* TODO */
 }
 ul li {
   /* TODO */
+  padding: 0.2rem 0 .2rem .4rem;
+  font-size: 1.2rem;
 }
 ul li:hover {
   /* TODO */
+  cursor: pointer;
+  background-color: #df4f00;
 }
 
 input {
-   /* TODO */
+  /* TODO */
+  background-color: #ed9e3c;
+  border: none;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
 }
