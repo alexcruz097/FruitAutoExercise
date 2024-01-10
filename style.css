@@ -1,16 +1,18 @@
 * {
   /* box-sizing: border-box; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :focus {
   /* TODO */
+  border: 1px solid #df4f00;
 }
 
 body {
   /* TODO */
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+
   /* gradient */
   background: rgb(243, 204, 39);
   background: -moz-linear-gradient(
@@ -31,8 +33,10 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f3cc27",endColorstr="#df4f00",GradientType=1);
 }
 
-input {
+p:hover {
   /* TODO */
+  cursor: pointer;
+  background-color: rgb(155, 167, 177);
 }
 
 .search-container {
@@ -43,7 +47,10 @@ input {
   align-items: center;
   height: 90vh;
 }
-
+#highlight{
+background-color: rgba(255, 0, 0, 0);
+font-weight: bold;
+}
 .search-container input,
 .search-container .suggestions {
   /* TODO */
@@ -68,10 +75,11 @@ ul {
 
 ul.has-suggestions {
   /* TODO */
+  background-color: red;
 }
 ul li {
   /* TODO */
-  padding: 0.2rem 0 .2rem .4rem;
+  padding: 0.2rem 0 0.2rem 0.4rem;
   font-size: 1.2rem;
 }
 ul li:hover {

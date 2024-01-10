@@ -116,10 +116,20 @@ function searchHandler(e) {
 
 function showSuggestions(results, inputVal) {
   //   iterate thru array and show on screen
+
+  const searchText = inputVal;
+  const regex = new RegExp(searchText, "gi");
+
   results.forEach((result) => {
+    result = result.replace(
+      /(<p style="backgound-color: blue; cursor:pointer">|<\/p>)/gim,
+      ""
+    );
+
+    const newText = result.replace(regex, '<mark id="highlight">$&</mark>');
     suggestions.innerHTML += `
-	<li>${result}</li>
-	`;
+  <p>${newText}</p>
+  `;
   });
 }
 
